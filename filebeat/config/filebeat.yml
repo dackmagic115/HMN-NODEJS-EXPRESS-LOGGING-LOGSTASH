@@ -1,0 +1,15 @@
+filebeat.inputs:
+  - type: log
+    paths:
+      - "/usr/share/writelogs/data/*.log"
+
+processors:
+  - decode_json_fields:
+      fields: ["message", "level", "label", "timestamp"]
+      process_array: false
+      max_depth: 3
+      target: ""
+      overwrite_keys: true
+
+output.logstash:
+  hosts: ["logstash:5044"]
