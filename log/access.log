@@ -1,0 +1,3 @@
+{"message":"info message","level":"info","label":"logging.js","timestamp":"2020-09-07 21:46:32"}
+{"message":"info message","level":"info","label":"logging.js","timestamp":"2020-09-07 21:49:12"}
+{"message":"Application is running on port 4150","level":"info","label":"index.js","timestamp":"2020-09-07 21:55:02"}
